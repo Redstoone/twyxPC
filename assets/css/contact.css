@@ -1,0 +1,85 @@
+.wrapper .banner-box {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background: url('../img/contact_bg.png') center center;
+  width: 100%;
+  height: 100%
+}
+
+.wrapper .banner-box .info-box {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: -150px
+}
+
+.wrapper .banner-box .info-box a, .wrapper .banner-box .info-box div {
+  color: #fff;
+  font-family: MLingWaiMedium-SC\, qingshu;
+  font-size: 14px
+}
+
+.wrapper .banner-box .info-box div a {
+  text-decoration: none
+}
+
+.wrapper .banner-box .info-box .code-box {
+  margin: 10px auto;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/qrcode1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain
+}
+
+.wrapper .banner-box .info-box .code-box2 {
+  background-image: url(../img/qrcode2.jpg);
+}
+
+.wrapper .banner-box .info-box .info-tip {
+  font-family: songyan;
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.wrapper .banner-box .info-box ul {
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.wrapper .banner-box .info-box ul li {
+  width: 210px;
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.wrapper .banner-box .info-box ul li p {
+  margin: 10px auto;
+  font-size: 14px;
+  color: #fff;
+}
+
+.wrapper .banner-box .info-box ul li:first-child {
+  margin-left: 0;
+}
+
+@media (max-width:768px) {
+  .wrapper .banner-box .info-box {
+    top: 40%;
+  }
+  .wrapper .banner-box .info-box .info-tip {
+    margin-bottom: 20px;
+    padding: 0px 6vw;
+  }
+  .wrapper .banner-box .info-box ul li {
+    margin-left: 0;
+  }
+  .wrapper .banner-box .info-box .code-box {
+    width: 150px;
+    height: 150px;
+  }
+}
