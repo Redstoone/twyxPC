@@ -1,7 +1,7 @@
 .wrapper .banner-box {
   height: 520px;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center bottom;
   background-size: cover;
   position: relative
 }
