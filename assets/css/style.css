@@ -1323,8 +1323,8 @@ body, html {
 }
 
 .main .page2-list {
-  max-width: 1000px;
-  margin: 10vw auto 0;
+  /* max-width: 1000px; */
+  margin: 15vw auto 0;
 }
 
 .main .page2-list>div p {
@@ -1338,7 +1338,7 @@ body, html {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   margin: 0 auto;
 }
 

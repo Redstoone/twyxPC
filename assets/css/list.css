@@ -250,7 +250,6 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
-  background-image: url(./img/news-img.png);
   vertical-align: middle
 }
 
@@ -918,7 +917,7 @@
 }
 
 .wrapper .course-list {
-  max-width: 980px;
+  /* max-width: 980px; */
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -942,7 +941,7 @@
   flex-basis: 22vw;
   width: 22vw;
   margin: 0 auto 3vw;
-  max-width: 315px;
+  /* max-width: 315px; */
   background-color: #fff;
   position: relative;
 }
@@ -950,8 +949,8 @@
 .wrapper .course-list .c-item .thumb, .wrapper .thumb-child {
   width: 22vw;
   height: 22vw;
-  max-width: 315px;
-  max-height: 315px;
+  /* max-width: 315px; */
+  /* max-height: 315px; */
   background-size: cover;
   position: relative;
 }
@@ -1000,8 +999,8 @@
   -ms-flex-basis: 34vw;
   -o-flex-basis: 34vw;
   flex-basis: 34vw;
-  max-width: 480px;
-  max-height: 315px;
+  /* max-width: 480px; */
+  /* max-height: 315px; */
 }
 
 .wrapper .course-list .c-item:nth-child(5n+4) .names {
@@ -1016,7 +1015,7 @@
   text-align: left;
   height: 100%;
   overflow: hidden;
-  max-width: 128px;
+  /* max-width: 128px; */
 }
 
 .wrapper .course-list .c-item:nth-child(5n+5) .names {
@@ -1035,7 +1034,7 @@
   padding-bottom: 0;
   max-height: 100%;
   overflow: hidden;
-  max-width: 128px;
+  /* max-width: 128px; */
 }
 
 .wrapper .course-list .c-item:nth-child(5n+4) .thumb {
@@ -1081,4 +1080,60 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(../img/i_waiting.png);
+}
+
+@media (max-width: 768px) {
+  .wrapper .course-wrap {
+    margin: 40px 5% 0;
+  }
+  .wrapper .course-list .c-item {
+    flex-basis: 100%;
+    margin: 0 8 5vw;
+  }
+  .wrapper .course-list .c-item .thumb, .wrapper .thumb-child {
+    width: 100%;
+    height: 246px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .wrapper .course-list .c-item:nth-child(5n+4), .wrapper .course-list .c-item:nth-child(5n+5) {
+    flex-basis: 100%;
+    height: initial;
+  }
+  .wrapper .course-list .c-item:nth-child(5n+4) .thumb, .wrapper .course-list .c-item:nth-child(5n+5) .thumb {
+    position: relative;
+  }
+  .wrapper .course-list .c-item:nth-child(5n+4) .names, .wrapper .course-list .c-item:nth-child(5n+5) .names {
+    writing-mode: initial;
+    position: relative;
+    right: initial;
+    bottom: initial;
+    text-align: right;
+  }
+  .wrapper .course-list .c-item:nth-child(5n+4) .names {
+    text-align: left;
+  }
+  .wrapper .course-list .c-item:nth-child(5n+4) .info, .wrapper .course-list .c-item:nth-child(5n+5) .info {
+    width: 100%;
+    position: relative;
+    height: initial;
+    top: initial;
+    left: initial;
+    bottom: initial;
+    right: initial;
+    text-align: right;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+  .wrapper .course-list .c-item:nth-child(5n+4) .info {
+    text-align: left;
+  }
+  .wrapper .course-list .c-item-more {
+    font-size: 16px;
+    padding: 40px 0;
+  }
+  .wrapper .course-list .c-item-more .waiting{
+    margin-bottom: 40px;
+  }
 }

@@ -175,7 +175,7 @@
 .onepage-pagination li a.active:before {
   width: 10px;
   height: 10px;
-  background: none;
+  background: #fff;
   border: 1px solid #5bbfd7;
   ;
   margin-top: -4px;
@@ -415,9 +415,9 @@
 .main .page1-banner {
   width: 100%;
   height: 100%;
-  background-image: url(../img/page1-banner.jpg);
-  background-position: 50% 50%;
-  background-size: cover;
+  background-color: #5bbfd7;
+  background-image: url(../img/home_bg.png);
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
   z-index: 3
@@ -917,7 +917,7 @@
   .main .page3-bg .news-list .content-box .img-content {
     width: 100%;
     height: 100%;
-    background-image: url(./img/m-page1-banner.png);
+    /* background-image: url(./img/m-page1-banner.png); */
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -938,7 +938,7 @@
     height: 100%
   }
   .main .page3-bg-h5 {
-    background-image: url(./img/m-page1-banner.png);
+    /* background-image: url(./img/m-page1-banner.png); */
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat
