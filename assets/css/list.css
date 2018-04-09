@@ -982,6 +982,7 @@
   font-size: 14px;
   color: #666;
   line-height: 24px;
+  display: block;
 }
 
 .wrapper .course-list .c-item:nth-child(5n+1) .names, .wrapper .course-list .c-item:nth-child(5n+1) .info {
@@ -1133,7 +1134,7 @@
     font-size: 16px;
     padding: 40px 0;
   }
-  .wrapper .course-list .c-item-more .waiting{
+  .wrapper .course-list .c-item-more .waiting {
     margin-bottom: 40px;
   }
 }

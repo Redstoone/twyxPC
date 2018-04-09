@@ -740,8 +740,9 @@
 }
 
 .guzhu-info-more .gi-content {
+  max-width: 1000px;
   background-color: #5bbfd7;
-  padding: .8rem;
+  padding: .8rem 30px;
   font-family: MLingWaiMedium-SC, qingshu;
   font-size: .8rem;
   font-weight: 400;
