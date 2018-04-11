@@ -1330,6 +1330,8 @@ body, html {
 .main .page2-list>div p {
   color: #999;
   line-height: 28px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .page4-bg .course-content-wrap {
@@ -1348,7 +1350,9 @@ body, html {
   height: 30vw;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 50%
+  background-position: 50%;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .page4-bg .course-content-wrap .content {
