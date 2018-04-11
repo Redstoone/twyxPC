@@ -6,8 +6,8 @@ $(function () {
     success: function (res) {
       if (res.status === 'succ') {
         res.data.array.forEach((item, index) => {
+          var _remark = item.remark ? item.remark : ''
           if (item.type == '2') {
-            var _remark = item.remarrk ? item.remarrk : ''
             dataList += '<li>' +
               '  <a target="_blank" class="img-box" href="' + item.link + '" style="background-image:url(' + item.imgUrl + ')"></a>' +
               '  <div class="new-content">' +
@@ -28,7 +28,7 @@ $(function () {
               '    <h2>' +
               '      <a target="_blank" href="./detail.html?c=growup&id=' + item.id + '">' + item.name + '</a>' +
               '    </h2>' +
-              '    <p class="remark">' + _remark + '</p>' +
+              '    <p class="remark"></p>' +
               '    <p class="">' +
               '      <span>' + item.createTime + '</span>' +
               '      <a target="_blank" href="./detail.html?c=growup&id=' + item.id + '" class="detail-link">查看</a>' +
