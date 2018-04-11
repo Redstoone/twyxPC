@@ -2,7 +2,7 @@ $(function () {
   var dataList = ''
   $.ajax({
     type: "GET",
-    url: "http://api.twyxedu.com/api/activity/list",
+    url: "http://api.twyxedu.com/api/calzz/list",
     success: function (res) {
       if (res.status === 'succ') {
         res.data.array.forEach((item, index) => {
