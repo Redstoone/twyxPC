@@ -1405,6 +1405,11 @@ body, html {
   background-image: url(../img/characteristic.png)
 }
 
+.img-box-wrapper {
+  text-align: right;
+  width: 35vw;
+}
+
 .wrapper .flex-box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1426,6 +1431,9 @@ body, html {
 }
 
 @media (max-width: 768px) {
+  .img-box-wrapper {
+    width:100%;
+  }
   .main .page1-text {
     margin-top: 18vw;
   }
