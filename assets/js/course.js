@@ -56,6 +56,7 @@ $(function() {
   $.ajax({
     type: "GET",
     url: "http://api.twyxedu.com/api/show/course/list",
+    data: {page: 1, pageSize: 200},
     success: function (res) {
       if (res.status === 'succ') {
         res.data.array.forEach(function (item, index) {
