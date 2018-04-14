@@ -30,6 +30,7 @@
   z-index: 1
 }
 
+
 .wrapper .banner-box h2 {
   color: #fff;
   font-size: 34px;
@@ -39,6 +40,12 @@
   top: 50%;
   width: 100%;
   z-index: 2
+}
+.wrapper .banner-box h2.no-title {
+  top: 35%;
+}
+.wrapper .banner-box h2 p{
+  margin: 10px auto;
 }
 
 .wrapper .tab-list {
@@ -1084,6 +1091,10 @@
 }
 
 @media (max-width: 768px) {
+  .wrapper .banner-box h2.no-title{
+    font-size: 18px;
+    top: 30%;
+  }
   .wrapper .course-wrap {
     margin: 40px 5% 0;
   }
