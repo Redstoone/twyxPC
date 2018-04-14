@@ -881,7 +881,8 @@ body, html {
 .hd .menu ul li {
   display: inline-block;
   width: 15.5%;
-  position: relative
+  position: relative;
+  text-align: center;
 }
 
 .hd .menu ul li.current a {
@@ -891,7 +892,7 @@ body, html {
 .hd .menu ul li a {
   color: #999;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   z-index: 9;
   display: inline-block;
@@ -1032,7 +1033,7 @@ body, html {
 }
 
 .sidebar li.current a {
-  color: #38d
+  color: #00a3b5;
 }
 
 .sidebar a {
@@ -1043,7 +1044,8 @@ body, html {
   display: block;
   padding: 0 2rem 0 2.5rem;
   width: 5rem;
-  text-align: left
+  text-align: left;
+  font-size: 16px;
 }
 
 @media (max-width:768px) {
@@ -1432,7 +1434,7 @@ body, html {
 
 @media (max-width: 768px) {
   .img-box-wrapper {
-    width:100%;
+    width: 100%;
   }
   .main .page1-text {
     margin-top: 18vw;
@@ -1588,4 +1590,48 @@ body, html {
     transform: scale(1);
     opacity: 0
   }
+}
+
+.dw-title {
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 56px;
+}
+
+.dw-time {
+  font-size: 18px;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 36px;
+  text-align: center;
+}
+
+.detail-wrap {
+  max-width: 1200px;
+  margin: 100px auto 50px;
+  padding: 0 30px;
+}
+
+.goback:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 2px solid #999;
+  border-right: none;
+  border-bottom: none;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 2px;
+  top: 17px;
+}
+
+.main-menu li {
+  position: relative;
+}
+
+.m-goback:before {
+  left: 15%;
+  top: calc(1rem - 5px);
 }

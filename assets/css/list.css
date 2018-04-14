@@ -268,7 +268,10 @@
 
 .wrapper .news-list li .new-content h2 {
   margin-bottom: 12px;
-  margin-top: 26px
+  margin-top: 26px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .wrapper .news-list li .new-content h2 a {
@@ -752,7 +755,6 @@
     margin: 10px
   }
   .wrapper .news-list li .new-content p .detail-link {
-    background-color: #1c7de0;
     padding: 10px 46px;
     border-radius: 25px
   }
