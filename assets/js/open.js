@@ -46,7 +46,7 @@ $(function () {
           $('.news-list ul').append(dataList)
         } else {
           noData = true
-          $('.news-list ul').append('<li class="no-data">没有数据</li>')
+          $('.news-list ul').append('<li class="no-data">正在努力建设中</li>')
         }
       }
     }
@@ -101,7 +101,9 @@ $(function () {
                 $('.news-list ul').append(dataList)
               } else if (noData == false) {
                 noData = true
-                $('.news-list ul').append('<li class="no-data">没有数据</li>')
+                if ($('.news-list ul li').length == 0) {
+                  $('.news-list ul').append('<li class="no-data">正在努力建设中</li>')
+                }
               }
             }
           }
