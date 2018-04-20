@@ -29,6 +29,8 @@ $(function () {
           document.querySelector('.dw-cont').innerHTML = res.data.content
           if (res.data.videoUrl) {
             document.querySelector('.video-box').innerHTML = res.data.videoUrl
+            document.querySelector('.video-box iframe').width = '100%'
+            document.querySelector('.video-box iframe').height = 'auto'
           }
         }
       }

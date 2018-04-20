@@ -1433,6 +1433,10 @@ body, html {
 }
 
 @media (max-width: 768px) {
+  .video-box iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
   .img-box-wrapper {
     width: 100%;
   }
@@ -1647,4 +1651,7 @@ body, html {
 .viewDetail{
   color: #00a3b5 !important;
   cursor: pointer !important;
+}
+.dw-cont img{
+  max-width: 100%;
 }
