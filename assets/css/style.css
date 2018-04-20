@@ -1635,3 +1635,16 @@ body, html {
   left: 15%;
   top: calc(1rem - 5px);
 }
+
+.course-info-more .gi-content{
+  max-width: 760px;
+  text-indent: 0;
+  padding: 0;
+}
+.course-info-more .gi-content img{
+  max-width: 100%;
+}
+.viewDetail{
+  color: #00a3b5 !important;
+  cursor: pointer !important;
+}
