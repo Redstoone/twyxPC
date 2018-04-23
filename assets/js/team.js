@@ -90,38 +90,81 @@ $(function () {
   ];
 
   var _content = ''
-  teamlist.forEach(function(item, index) {
-    _content += '<div class="item c-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">' +
-      '  <div class="thumb thumb1" style="background-image: url(./assets/img/' + item.url +');">' +
-      '    <div class="thumb-child" style="opacity: 1;"></div>' +
-      '  </div>' +
-      '  <div class="names">' + item.name + '</div>' +
-      '  <div class="info">' +
-      '    <span>' + item.position[0] + '</span>' +
-      '  </div>' +
-      '</div>';
-  })
-  $('.img-list').append(_content)
 
-  $('.c-item').on('click', function() {
-    var item = teamlist[$(this).index()]
-    
-    var _sogo = '<div class="sogo-wrap">'
-    item.position.forEach(function(item, index) {
-      _sogo += '<p class="sogo-tip">'+item+'</p>';
-    })
+  $.ajax({
+    type: "GET",
+    url: "http://api.twyxedu.com/api/show/teacher/list",
+    success: function (res) {
+      // console.log(res.data.array)
+      let teamlist = res.data.array
 
-    var _member = '<div class="gi-content">'+
-      '<div class="guzhu-thumb" style="background-image: url(./assets/img/' + item.url +');"></div>'+
-      '  <h2>' + item.name + '</h2>' + _sogo + '</div>' +
-      '  <p>' + item.desc +'</p>' +
-      '</div>' +
-      '<div class="gi-close">' +
-      '  <i id="J_guzhuinfo_close" class="iconfont icon-guanbi"></i>' +
-      '</div>';
-    
-    $('.guzhu-info-more').addClass('open').empty().append(_member)
+      teamlist.forEach(function (item, index) {
+        _content += '<div class="item c-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">' +
+          '  <div class="thumb thumb1" style="background-image: url(' + item.pcimgUrl + ');">' +
+          '    <div class="thumb-child" style="opacity: 1;"></div>' +
+          '  </div>' +
+          '  <div class="names">' + item.name + '</div>' +
+          '  <div class="info">' +
+          '    <span>' + item.job.split(',')[0] + '</span>' +
+          '  </div>' +
+          '</div>';
+        })
+        $('.img-list').append(_content)
+
+        $('.c-item').on('click', function () {
+          var item = teamlist[$(this).index()]
+
+          var _sogo = '<div class="sogo-wrap">'
+          item.job.split(',').forEach(function (item, index) {
+            _sogo += '<p class="sogo-tip">' + item + '</p>';
+          })
+
+          var _member = '<div class="gi-content">' +
+            '<div class="guzhu-thumb" style="background-image: url(' + item.pcimgUrl + ');"></div>' +
+            '  <h2>' + item.name + '</h2>' + _sogo + '</div>' +
+            '  <p>' + item.intro + '</p>' +
+            '</div>' +
+            '<div class="gi-close">' +
+            '  <i id="J_guzhuinfo_close" class="iconfont icon-guanbi"></i>' +
+            '</div>';
+
+          $('.guzhu-info-more').addClass('open').empty().append(_member)
+        })
+    }
   })
+
+  // teamlist.forEach(function(item, index) {
+  //   _content += '<div class="item c-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">' +
+  //     '  <div class="thumb thumb1" style="background-image: url(./assets/img/' + item.url +');">' +
+  //     '    <div class="thumb-child" style="opacity: 1;"></div>' +
+  //     '  </div>' +
+  //     '  <div class="names">' + item.name + '</div>' +
+  //     '  <div class="info">' +
+  //     '    <span>' + item.position[0] + '</span>' +
+  //     '  </div>' +
+  //     '</div>';
+  // })
+  // $('.img-list').append(_content)
+
+  // $('.c-item').on('click', function() {
+  //   var item = teamlist[$(this).index()]
+    
+  //   var _sogo = '<div class="sogo-wrap">'
+  //   item.position.forEach(function(item, index) {
+  //     _sogo += '<p class="sogo-tip">'+item+'</p>';
+  //   })
+
+  //   var _member = '<div class="gi-content">'+
+  //     '<div class="guzhu-thumb" style="background-image: url(./assets/img/' + item.url +');"></div>'+
+  //     '  <h2>' + item.name + '</h2>' + _sogo + '</div>' +
+  //     '  <p>' + item.desc +'</p>' +
+  //     '</div>' +
+  //     '<div class="gi-close">' +
+  //     '  <i id="J_guzhuinfo_close" class="iconfont icon-guanbi"></i>' +
+  //     '</div>';
+    
+  //   $('.guzhu-info-more').addClass('open').empty().append(_member)
+  // })
 
   $('.guzhu-info-more').on('click', '#J_guzhuinfo_close', function() {
     $('.guzhu-info-more').removeClass('open')
