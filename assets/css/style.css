@@ -1655,3 +1655,9 @@ body, html {
 .dw-cont img{
   max-width: 100%;
 }
+
+.course-classify{border-bottom: 2px solid #999;margin-bottom:20px;}
+.classify-item{display: inline-block;padding: 10px 25px;cursor: pointer;font-size: 18px;font-weight: 500;}
+.classify-item.active{color: #5bbfd7;position: relative;}
+.classify-item.active:after{content: '';width: 100%;height: 4px;position: absolute;; left:0;bottom:-2px;background-color: #5bbfd7;}
+.no-course{font-size: 16px;color: #666;margin: 100px auto;text-align: center;}
