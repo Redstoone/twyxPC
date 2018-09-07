@@ -18,7 +18,7 @@ $(function () {
   function getNewsDetail(id) {
     $.ajax({
       type: "GET",
-      url: "http://api.twyxedu.com/api/news/detail",
+      url: "http://t.api.twyxedu.com/api/news/detail",
       data: {
         newsId: id
       },
@@ -40,7 +40,7 @@ $(function () {
   function getGrowupDetail(id) {
     $.ajax({
       type: "GET",
-      url: "http://api.twyxedu.com/api/activity/detail",
+      url: "http://t.api.twyxedu.com/api/activity/detail",
       data: {
         activityId: id
       },
@@ -60,7 +60,7 @@ $(function () {
   function getOpenDetail(id) {
     $.ajax({
       type: "GET",
-      url: "http://api.twyxedu.com/api/show/clazz/detail",
+      url: "http://t.api.twyxedu.com/api/show/clazz/detail",
       data: {
         showId: id
       },

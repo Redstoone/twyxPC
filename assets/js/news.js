@@ -5,7 +5,7 @@ $(function () {
   var noData = false
   $.ajax({
     type: "GET",
-    url: "http://api.twyxedu.com/api/news/list",
+    url: "http://t.api.twyxedu.com/api/news/list",
     data: { page: 1, pageSize: pageSize },
     success: function (res) {
       if (res.status === 'succ') {
@@ -59,7 +59,7 @@ $(function () {
       if (!noData) {
         $.ajax({
           type: "GET",
-          url: "http://api.twyxedu.com/api/news/list",
+          url: "http://t.api.twyxedu.com/api/news/list",
           data: { page: page++, pageSize: pageSize },
           success: function (res) {
             if (res.status === 'succ') {
