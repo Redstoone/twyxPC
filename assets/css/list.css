@@ -1104,7 +1104,7 @@
     text-align: left;
     white-space: nowrap;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
   .wrapper .course-wrap .course-classify::-webkit-scrollbar{
@@ -1112,7 +1112,7 @@
   }
   .wrapper .course-wrap .classify-item{
     font-size: 16px;
-    padding: 10px 15px;
+    padding: 6px 15px;
   }
   .wrapper .course-list .c-item {
     flex-basis: 100%;
