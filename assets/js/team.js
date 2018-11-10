@@ -93,7 +93,7 @@ $(function () {
 
   $.ajax({
     type: "GET",
-    url: "http://t.api.twyxedu.com/api/show/teacher/list",
+    url: "http://api.twyxedu.com/api/show/teacher/list",
     success: function (res) {
       // console.log(res.data.array)
       let teamlist = res.data.array

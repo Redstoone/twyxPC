@@ -4,7 +4,7 @@ $(function() {
   function getClassifyList() {
     $.ajax({
       type: "GET",
-      url: "http://t.api.twyxedu.com/api/show/course/classify/list",
+      url: "http://api.twyxedu.com/api/show/course/classify/list",
       success: function (res) {
         if (res.status === 'succ') {
           res.data.array.forEach(function (item, index) {
@@ -31,7 +31,7 @@ $(function() {
     let _content = '';
     $.ajax({
       type: "GET",
-      url: "http://t.api.twyxedu.com/api/show/course/group",
+      url: "http://api.twyxedu.com/api/show/course/group",
       data: { page: 1, pageSize: 200, classifyId: cId},
       success: function (res) {
         if (res.status === 'succ') {
