@@ -1316,12 +1316,13 @@ body, html {
 }
 
 .main .page2-bg .title {
-  font-size: 14px;
+  font-size: 16px;
   color: #000000;
   text-align: center;
   font-weight: bold;
   line-height: initial;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .main .page2-list {
