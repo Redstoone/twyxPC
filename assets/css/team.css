@@ -766,12 +766,14 @@
 
 .guzhu-info-more .gi-content p {
   border-radius: .5rem;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.3rem;
+  line-height: 2rem;
   margin: 0;
   -webkit-overflow-scrolling: touch;
   text-align: center;
+  font-family: songyan;
   /* text-indent: 0; */
+
 }
 
 .guzhu-info-more .gi-close {
@@ -799,7 +801,7 @@
     font-family: MLingWaiMedium-SC, qingshu
   }
   .guzhu-info-more h2 {
-    font-size: 1.5rem
+    font-size: 1.8rem
   }
   .guzhu-info-more .gi-close .icon-guanbi {
     font-size: 2.5rem
